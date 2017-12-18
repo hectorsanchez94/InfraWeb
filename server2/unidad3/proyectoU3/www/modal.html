@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/micss.css">
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img src="img/escudo.png" width="50" height="50"> ITT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Incio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Galería fotográfica</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-users" aria-hidden="true"></i> Conferencias</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="index.html#obligatorias"><i class="fa fa-lock" aria-hidden="true"></i> Obligatorias</a>
+                        <a class="dropdown-item" href="index.html#optativas"><i class="fa fa-unlock" aria-hidden="true"></i> Optativas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-question-circle" aria-hidden="true"></i> Investigaciones</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="carrusel.html"><i class="fa fa-chevron-right" aria-hidden="true"></i> Carrusel</a>
+                        <a class="dropdown-item" href="modal.html"><i class="fa fa-commenting-o" aria-hidden="true"></i></i> Ventana Modal</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="acercade.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Acerca de...</a>
+
+                </li>
+
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+</div>
+<br><br><br>
+
+
+<div class="container"><br><br>
+    <div class="row featurette">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="col-lg-12">
+                    <h2 class="card-header featurette-heading text-center">Crear un modal en Bootstrap 4</h2>
+                    <div class="col-lg-7">
+                        <div class="card-block">
+                            <br><br>
+                            <h4 class="card-title text-muted">¿Qué es un modal?</h4>
+                            <p class="card-text lead">Es una capa que se superpone a las demás quedando en primer plano de nuestra web y dejando en un segundo plano el resto de la página. Para que el usuario no capte la atención en otro componente que no sea el modal, se suele crear éste dentro de otra capa que ocupa el 100% del ancho y del alto de la ventana con un mínimo de opacidad y tono oscuro.</p>
+                            <div class="col-sm-offset-5 col-sm-2 text-center">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">
+                                    ¿Cómo se hace?
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <br>
+                        <img class="img-responsive" src="img/que-es-modal.png" alt="Generic placeholder image">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle">¿Cómo se hace una modal con Bootstrap 4?</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>Cargando las librerías para el modal en Bootstrap</h5>
+                <p>Lo primero que deberemos hacer es obtener las librerías que vamos a usar que son las siguientes:</p>
+                <ul>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <p>Para cargar las librerías que acabamos de comentar, tenemos dos opciones:</p>
+                <p>La primera es que carguemos ambas (o una solamente) directamente desde cada una de sus páginas con el enlace que nos proporcionan. Recuerda que, si se cae alguna de estas páginas, nuestra aplicación dejará de funcionar aunque la probabilidad de que la página de Bootstrap o de jQuery estén caídas es casi remota. Si elegimos esta opción, estas serán las líneas que deberás pegar en tu código:</p>
+                <img class="img-responsive" src="img/captura1.png" alt="Generic placeholder image">
+                <p>Como vemos, en primer lugar cargamos los estilos de bootstrap ya que sin ella no funcionaría el mismo. </p>
+                <h5>El HTML del modal</h5>
+                <p>En primer lugar, vamos a crear el modal en sí. Para que sea más fácil de explicar, dejamos aquí el código y, seguidamente, explicaremos línea a línea:</p>
+                <img class="img-responsive" src="img/captura2.png" alt="Generic placeholder image">
+                <ul>
+                    <li>Línea 1: creamos el contenedor principal con un ID único (en nuestro caso “miModal”). Es importante quedarnos con este ID ya que será el que usemos a la hora de llamar a la función que muestra este contenedor. Es este el contenedor, que comentábamos antes, que tiene el fondo oscuro con cierta opacidad que hace que reste protagonismo al resto de la página.</li>
+                    <li>Linea 2: es el contenedor donde está definido el tamaño del contenedor (por defecto 600px).</li>
+                    <li>Línea 3: se trata de un contenedor donde están asociados estilos tales como fondo del modal, bordes, sombreados, etc.</li>
+                    <li>Línea 4: en esta línea, Bootstrap mete el DIV que contiene el botón de cerrar el modal así como el título del modal en un encabezado (H4).</li>
+                    <li>Línea 10: en el div con clase “modal-body” es donde insertaremos el contenido que queremos que haya en el modal.</li>
+                </ul>
+                <p>Una vez que tenemos el modal creado y, por defecto, oculto, tenemos que elegir la manera de que se muestre al usuario. Para ello, vamos a usar un botón de los que viene predeterminados en la librería de Bootstrap.</p>
+                <p>Para ello, sólo tendremos que insertar el siguiente código donde queremos que aparezca dicho botón:</p>
+                <img class="img-responsive" src="img/captura3.png" alt="Generic placeholder image">
+                <p>Como vemos, el atributo “data-target” es el encargado de contener el identificador del DIV del modal: miModal. Si cambiáramos uno u otro dejarían de funcionar. Tienen que tener el mismo ID obligatoriamente.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- // -->
+<footer class="footer">
+    <div class="container">
+        <div class="text-center center-block">
+            <h5><strong>JORNADA ACADÉMICA DE COMPUTACIÓN 2017</strong></h5>
+            <a href="https://www.facebook.com/JornadaAcademica2017/"><i class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="http://ittepic.edu.mx/"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:marparra@ittepic.edu.mx"><i class="fa fa-envelope-square fa-3x social"></i></a>
+            <h6>AV. TECNOLÓGICO # 2595, COL. LAGOS DEL COUNTRY. TEPIC, NAYARIT. MÉXICO. C.P. 63175. TEL: (311) 211 94 00.</h6>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="js/mijs.js"></script>
+
+</body>
+</html>
+
+
+

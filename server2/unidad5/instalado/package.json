@@ -1,0 +1,14 @@
+{
+  "name": "vue_example",
+  "version": "1.0.0",
+  "description": "Vue Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hector",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.9"
+  }
+}

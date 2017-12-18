@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="caja" v-bind:class="{ rojo : semaforoRojo, verde : !semaforoRojo}"></div>
+        {{semaforoRojo}} {{mensaje}}
+        <p>
+            <button @click="cambiar">cambiar</button>
+        </p>
+    </div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Vue js</title>
+		<link rel="stylesheet" href="micss.css">
+	</head>
+	<body>
+		<div id="app">
+			<button v-on:click="contador=contador+1">{{contador}}</button>
+			<br>
+			<button v-on:click="contador=Math.random()">{{contador}}</button>
+			<br>
+			<input v-model="mensaje"></input>
+			<ul>
+				<li v-for="mensaje in mensaje">{{mensaje}}</li>
+			</ul>
+			<ul>
+				<br>
+				<li v-for="elemento in patrones">{{elemento.patron}} es de tipo {{elemento.tipo}}</li>
+			</ul>
+			<br>
+			<p>{{mensaje}}</p>
+			<input v-model="mensaje"></input>
+		</div>
+	</body>
+	<script src="/Users/Hector/idw/aprende-vue/node_modules/vue/dist/vue.js"></script>
+	<script src="main.js"></script>
+</html>

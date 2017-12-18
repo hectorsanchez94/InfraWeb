@@ -1,0 +1,13 @@
+.caja{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+}
+
+.verde{
+    background: greenyellow;
+}
+
+.rojo{
+    background: firebrick;
+}
